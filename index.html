@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom.css">
 
 </head>
 <body>
@@ -28,7 +30,7 @@
       </nav>
 
     <!-- cards -->
-    <div class="d-flex gap-5 container-fluid grid p-3	">
+    <div class="d-flex gap-5 container-fluid grid p-3 	">
         <div class="card g-col-4 " style="width: 18rem;">
             <img src="images/triangle.png" class="card-img-top p-3" alt="...">
             <div class="card-body ">
@@ -159,77 +161,82 @@
 
     </div>
     <!-- Rhombus -->
-    <div class="d-flex gap-5 container-fluid grid	">
-        <div class="card g-col-4 " style="width: 18rem;">
-            <img src="images/rhombus.png" class="card-img-top p-3" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title d-flex justify-content-center">Rhombus</h5>
-              <p class="card-text d-flex justify-content-center">Area (A) = 0.5×d1×d2</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <div class="input-group input-group-sm mb-3 d-flex justify-content-center">
-                <input type="text" id="d1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="d1" >
-                <p>cm</p>
-                <input type="text" id="d2
-                " class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="d2" >
-                <p>cm</p>
+    <div class="r2">
+        <div class="d-flex gap-5 container-fluid grid p-3 mx-auto ">
+            <div class="card g-col-4 " style="width: 18rem;">
+                <img src="images/rhombus.png" class="card-img-top p-3" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title d-flex justify-content-center">Rhombus</h5>
+                  <p class="card-text d-flex justify-content-center">Area (A) = 0.5×d1×d2</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <div class="input-group input-group-sm mb-3 d-flex justify-content-center">
+                    <input type="text" id="d1" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="d1" >
+                    <p>cm</p>
+                    <input type="text" id="d2
+                    " class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="d2" >
+                    <p>cm</p>
+        
+                      </div>
+                </ul>
+                <div class="card-body d-flex justify-content-center">
+                    <button id="cal-btn-rmb" class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
+        
+                </div>
+              </div>
+              <!-- Pentagon -->
+            <div class="card g-col-4" style="width: 18rem;">
+                <img src="images/triangle.png" class="card-img-top p-3" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title d-flex justify-content-center">Pentagon</h5>
+                  <p class="card-text d-flex justify-content-center">Area (A) = 0.5×p×b</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <div class="input-group input-group-sm mb-3 d-flex justify-content-center">
+                    <input type="text" id="p" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="p" >
+                    <p>cm</p>
+                    <input type="text" id="b" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="b" >
+                    <p>cm</p>
+        
+                      </div>
+                </ul>
+                <div class="card-body d-flex justify-content-center">
+                    <button id="cal-btn-pnt" class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
+        
+                </div>
+              </div>
+              <!-- ellipse -->
+            <div class="card g-col-4" style="width: 18rem;">
+                <img src="images/ellipse.png" class="card-img-top p-3" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title d-flex justify-content-center">Ellipse</h5>
+                  <p class="card-text d-flex justify-content-center">Area (A) = &#960; ×a×b</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <div class="input-group input-group-sm mb-3 d-flex justify-content-center">
+                    <input id="a" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="a" >
+                    <p>cm</p>
+                    <input type="text" id="bass" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="b" >
+                    <p>cm</p>
+        
+                      </div>
+                </ul>
+                <div class="card-body d-flex justify-content-center">
+                    <button id="cal-btn-el" class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
+        
+                </div>
+              </div>
+            
+        
     
-                  </div>
-            </ul>
-            <div class="card-body d-flex justify-content-center">
-                <button id="cal-btn-rmb" class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
-    
-            </div>
-          </div>
-          <!-- Pentagon -->
-        <div class="card g-col-4" style="width: 18rem;">
-            <img src="images/triangle.png" class="card-img-top p-3" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title d-flex justify-content-center">Pentagon</h5>
-              <p class="card-text d-flex justify-content-center">Area (A) = 0.5×p×b</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <div class="input-group input-group-sm mb-3 d-flex justify-content-center">
-                <input type="text" id="p" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="p" >
-                <p>cm</p>
-                <input type="text" id="b" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="b" >
-                <p>cm</p>
-    
-                  </div>
-            </ul>
-            <div class="card-body d-flex justify-content-center">
-                <button id="cal-btn-pnt" class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
-    
-            </div>
-          </div>
-          <!-- ellipse -->
-        <div class="card g-col-4" style="width: 18rem;">
-            <img src="images/ellipse.png" class="card-img-top p-3" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title d-flex justify-content-center">Ellipse</h5>
-              <p class="card-text d-flex justify-content-center">Area (A) = &#960; ×a×b</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <div class="input-group input-group-sm mb-3 d-flex justify-content-center">
-                <input id="a" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="a" >
-                <p>cm</p>
-                <input type="text" id="bass" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="b" >
-                <p>cm</p>
-    
-                  </div>
-            </ul>
-            <div class="card-body d-flex justify-content-center">
-                <button id="cal-btn-el" class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
-    
-            </div>
-          </div>
+        </div>
         
     
 
     </div>
-    
 
-
+   
+<script src="js/color.js"></script>
      <!-- calculate.js connection -->
      <script src="js/calculate.js"></script>
     <!-- for bootstrap -->
