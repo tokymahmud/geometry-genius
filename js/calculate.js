@@ -1,3 +1,4 @@
+// triangle
 document.getElementById('cal-btn').addEventListener('click', function(){
 const  baseFieldTriangle = document.getElementById('b-field');
 const baseFieldTrianglestring = baseFieldTriangle.value;
@@ -58,4 +59,72 @@ if (typeof a === 'NaN' && typeof b === 'NaN' ){
 
     
 })
+
+// Parallelogram
+
+document.getElementById('cal-btn-p').addEventListener('click', function(){
+    const  baseFieldParallelogram = document.getElementById('b-field-p');
+    const baseFieldParallelogramstring = baseFieldParallelogram.value;
+    const newbaseFieldParallelogram = parseFloat(baseFieldParallelogramstring)
+    
+    const  heightFieldParallelogram = document.getElementById('h-field-p');
+    const heightFieldParallelogramstring = heightFieldParallelogram.value;
+    const newheightFieldParallelogram = parseFloat(heightFieldParallelogramstring)
+    
+    a= typeof newbaseFieldParallelogram;
+    b= typeof newheightFieldParallelogram;
+    
+    if (typeof a === 'NaN' && typeof b === 'NaN' ){
+        
+        alert ('enter number')
+       }
+       else{
+        const totalParallelogramField = newbaseFieldParallelogram*newheightFieldParallelogram;
+       
+    
+        const displayfieldp = document.getElementById('t-field-p');
+        displayfieldp.innerText = totalParallelogramField;
+    
+       }
+    
+    
+    
+        
+    })
+
+
+    // Rhombus
+
+
+    document.getElementById('cal-btn-rmb').addEventListener('click', function(){
+        const  d1FieldRhombus = document.getElementById('d1');
+        const d1FieldRhombusstring = d1FieldRhombus.value;
+        const newd1FieldRhombus = parseFloat(d1FieldRhombusstring)
+        
+        const  d2FieldRhombus = document.getElementById('d2');
+        const d2FieldRhombusstring = d2FieldRhombus.value;
+        const newd2FieldRhombus = parseFloat(d2FieldRhombusstring)
+        
+        a= typeof newd1FieldRhombus;
+        b= typeof newd2FieldRhombus;
+        
+        if (typeof a === 'NaN' && typeof b === 'NaN' ){
+            
+            alert ('enter number')
+           }
+           else{
+            const totalRhombusField = newd1FieldRhombus*newd2FieldRhombus;
+           
+        
+            const displayfieldp = document.getElementById('t-field-p');
+            displayfieldp.innerText = totalRhombusField;
+        
+           }
+        
+        
+        
+            
+        })
+
+        // Pentagon
 
