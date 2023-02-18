@@ -36,15 +36,15 @@
             </div>
             <ul class="list-group list-group-flush">
                 <div class="input-group input-group-sm mb-3 d-flex justify-content-center">
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="b" >
+                <input id="b-field" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="b" >
                 <p>cm</p>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="h" >
+                <input type="text" id="h-field" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="h" >
                 <p>cm</p>
     
                   </div>
             </ul>
             <div class="card-body d-flex justify-content-center">
-                <button class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
+                <button class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" id="cal-btn" type="submit">Calculate</button>
     
             </div>
           </div>
@@ -53,19 +53,19 @@
             <img src="images/rectangle.png" class="card-img-top p-3" alt="...">
             <div class="card-body ">
               <h5 class="card-title d-flex justify-content-center">Rectangle</h5>
-              <p class="card-text d-flex justify-content-center">Area (A) = w×t</p>
+              <p class="card-text d-flex justify-content-center">Area (A) = w×l</p>
             </div>
             <ul class="list-group list-group-flush">
                 <div class="input-group input-group-sm mb-3 d-flex justify-content-center">
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="W" >
+                <input id="w-field" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="W" >
                 <p>cm</p>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="T" >
+                <input id="l-field" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="L" >
                 <p>cm</p>
     
                   </div>
             </ul>
             <div class="card-body d-flex justify-content-center">
-                <button class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
+                <button id="cal-btn" class="btn btn-primary btn-lg d-grid gap-2 col-6 mx-auto" type="submit">Calculate</button>
     
             </div>
           </div>
@@ -97,7 +97,7 @@
                 <div class="d-flex gap-2">
                     <p>1. Triangle</p>
 
-                    <p>0 &#13216;</p>
+                    <p> <span id="t-field">0</span> &#13216;</p>
 
                     <button type="button" class="btn btn-primary"         style=" --bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                         convert to &#x33A1;</button>
@@ -229,7 +229,8 @@
    
 
 
-
+     <!-- calculate.js connection -->
+     <script src="js/calculate.js"></script>
     <!-- for bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
