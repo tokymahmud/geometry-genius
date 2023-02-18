@@ -11,7 +11,7 @@ document.getElementById('cal-btn').addEventListener('click', function(){
     function validitycheck(v1,v2){
         if (isNaN(v1) || isNaN(v2) || v1<0 ||v2<0){
         
-            alert ('enter number correctly');
+            alert ('!!!!!enter number correctly');
             return;
         
         }
@@ -20,7 +20,7 @@ document.getElementById('cal-btn').addEventListener('click', function(){
            
         
             const displayfield = document.getElementById('t-field');
-            displayfield.innerText = totalTriangleField;
+            displayfield.innerText = totalTriangleField.toFixed(2);
             return;
         
         }
@@ -49,8 +49,7 @@ const  lengthFieldrectangle = document.getElementById('l-field');
 const lengthFieldrectanglestring = lengthFieldrectangle.value;
 const newlengthFieldrectangle = parseFloat(lengthFieldrectanglestring)
 
-a= typeof newwidthFieldrectangle;
-b= typeof newlengthFieldrectangle;
+
 
 if (typeof a === 'NaN' && typeof b === 'NaN' ){
     
@@ -61,9 +60,40 @@ if (typeof a === 'NaN' && typeof b === 'NaN' ){
    
 
     const displayfieldr = document.getElementById('t-field-r');
-    displayfieldr.innerText = totalrectangleField;
+    displayfieldr.innerText = totalrectangleField.toFixed(2);
 
    }
+
+
+
+   function validitycheck(v3,v4){
+    if (isNaN(v3) || isNaN(v4) || v3<0 ||v2<4){
+    
+        alert ('!!!!!!!enter number correctly');
+        return;
+    
+    }
+    else{
+        const totalrectangleField = newwidthFieldrectangle*newlengthFieldrectangle;
+   
+
+        const displayfieldr = document.getElementById('t-field-r');
+        displayfieldr.innerText = totalrectangleField;
+        return;
+    
+    }
+    
+    
+        
+
+}
+validitycheck(newwidthFieldrectangle,newlengthFieldrectangle);
+
+
+widthFieldrectangle .value  = '';
+lengthFieldrectangle.value  = '';
+
+    
 
 
 
@@ -93,7 +123,7 @@ document.getElementById('cal-btn-p').addEventListener('click', function(){
        
     
         const displayfieldp = document.getElementById('t-field-p');
-        displayfieldp.innerText = totalParallelogramField;
+        displayfieldp.innerText = totalParallelogramField.toFixed(2);
     
        }
     
@@ -127,7 +157,7 @@ document.getElementById('cal-btn-p').addEventListener('click', function(){
            
         
             const displayfieldp = document.getElementById('t-field-p');
-            displayfieldp.innerText = totalRhombusField;
+            displayfieldp.innerText = totalRhombusField.toFixed(2);
         
            }
         
@@ -159,7 +189,7 @@ document.getElementById('cal-btn-p').addEventListener('click', function(){
                
             
                 const displayfieldpnt = document.getElementById('t-field-pnt');
-                displayfieldpnt.innerText = totalPentagonField;
+                displayfieldpnt.innerText = totalPentagonField.toFixed(2);
             
                }
             
@@ -191,7 +221,7 @@ document.getElementById('cal-btn-el').addEventListener('click', function(){
        
     
         const displayfieldel = document.getElementById('t-field-el');
-        displayfieldel.innerText = totalEllipseField;
+        displayfieldel.innerText = totalEllipseField.toFixed(2);
     
        }
     
