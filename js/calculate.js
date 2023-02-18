@@ -1,33 +1,43 @@
 // triangle
 document.getElementById('cal-btn').addEventListener('click', function(){
-const  baseFieldTriangle = document.getElementById('b-field');
-const baseFieldTrianglestring = baseFieldTriangle.value;
-const newbaseFieldTriangle = parseFloat(baseFieldTrianglestring)
-
-const  heightFieldTriangle = document.getElementById('h-field');
-const heightFieldTrianglestring = heightFieldTriangle.value;
-const newheightFieldTriangle = parseFloat(heightFieldTrianglestring)
-
-a= typeof newbaseFieldTriangle;
-b= typeof newheightFieldTriangle;
-
-if (typeof a === 'NaN' && typeof b === 'NaN' ){
+    const  baseFieldTriangle = document.getElementById('b-field');
+    const baseFieldTrianglestring = baseFieldTriangle.value;
+    const newbaseFieldTriangle = parseFloat(baseFieldTrianglestring)
     
-    alert ('enter number')
-   }
-   else{
-    const totalTriangleField = 0.5*newbaseFieldTriangle*newheightFieldTriangle;
-   
+    const  heightFieldTriangle = document.getElementById('h-field');
+    const heightFieldTrianglestring = heightFieldTriangle.value;
+    const newheightFieldTriangle = parseFloat(heightFieldTrianglestring)
+  
+    function validitycheck(v1,v2){
+        if (isNaN(v1) || isNaN(v2) || v1<0 ||v2<0){
+        
+            alert ('enter number correctly');
+            return;
+        
+        }
+        else{
+            const totalTriangleField = 0.5*newbaseFieldTriangle*newheightFieldTriangle;
+           
+        
+            const displayfield = document.getElementById('t-field');
+            displayfield.innerText = totalTriangleField;
+            return;
+        
+        }
+        
+        
+            
 
-    const displayfield = document.getElementById('t-field');
-    displayfield.innerText = totalTriangleField;
-
-   }
-
-
-
+    }
+    validitycheck(newbaseFieldTriangle,newheightFieldTriangle);
     
-})
+    
+       baseFieldTriangle.value  = '';
+       heightFieldTriangle.value  = '';
+    
+        
+    
+    })
 // rectangle 
 
 document.getElementById('cal-btn-r').addEventListener('click', function(){
