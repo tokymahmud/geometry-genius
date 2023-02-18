@@ -113,7 +113,7 @@ document.getElementById('cal-btn-p').addEventListener('click', function(){
             alert ('enter number')
            }
            else{
-            const totalRhombusField = newd1FieldRhombus*newd2FieldRhombus;
+            const totalRhombusField = 0.5*newd1FieldRhombus*newd2FieldRhombus;
            
         
             const displayfieldp = document.getElementById('t-field-p');
@@ -127,4 +127,66 @@ document.getElementById('cal-btn-p').addEventListener('click', function(){
         })
 
         // Pentagon
+
+        document.getElementById('cal-btn-pnt').addEventListener('click', function(){
+            const  pFieldPentagon = document.getElementById('p');
+            const pFieldPentagonstring = pFieldPentagon.value;
+            const newpFieldPentagon = parseFloat(pFieldPentagonstring)
+            
+            const  bFieldPentagon = document.getElementById('b');
+            const bFieldPentagonstring = bFieldPentagon.value;
+            const newbFieldPentagon = parseFloat(bFieldPentagonstring)
+            
+            a= typeof newpFieldPentagon;
+            b= typeof newbFieldPentagon;
+            
+            if (typeof a === 'NaN' && typeof b === 'NaN' ){
+                
+                alert ('enter number')
+               }
+               else{
+                const totalPentagonField = 0.5*newpFieldPentagon*newbFieldPentagon;
+               
+            
+                const displayfieldpnt = document.getElementById('t-field-pnt');
+                displayfieldpnt.innerText = totalPentagonField;
+            
+               }
+            
+            
+            
+                
+            })
+        
+// Ellipse
+
+document.getElementById('cal-btn-el').addEventListener('click', function(){
+    const  aFieldEllipse = document.getElementById('a');
+    const aFieldEllipsestring = aFieldEllipse.value;
+    const newaFieldEllipse = parseFloat(aFieldEllipsestring)
+    
+    const  bassFieldEllipse = document.getElementById('bass');
+    const bassFieldEllipsestring = bassFieldEllipse.value;
+    const newbassFieldEllipse = parseFloat(bassFieldEllipsestring)
+    
+    a= typeof newaFieldEllipse;
+    b= typeof newbassFieldEllipse;
+    
+    if (typeof a === 'NaN' && typeof b === 'NaN' ){
+        
+        alert ('enter number')
+       }
+       else{
+        const totalEllipseField = 3.1416*newaFieldEllipse*newbassFieldEllipse;
+       
+    
+        const displayfieldel = document.getElementById('t-field-el');
+        displayfieldel.innerText = totalEllipseField;
+    
+       }
+    
+    
+    
+        
+    })
 
